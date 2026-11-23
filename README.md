@@ -12,3 +12,7 @@ Run `python3 build.py` to regenerate the gallery and concept HTML, then `python3
 - `site/architecture.html`: domain, URL structure, migration sequence, and public image credits.
 
 Deployment uses GitHub Pages from the separate review repository and does not claim the lab’s custom domain. The production repository and DNS are out of scope.
+
+## Matched homepage studies
+
+Run `python3 review.py` to regenerate the four studies and their comparison page in `site/review/`. The three evidence projects and lead photograph are deliberately held constant. The desk and timing studies use native radio inputs and CSS; JavaScript is not required. The earlier twenty concepts remain available as layout explorations.

@@ -147,7 +147,7 @@ def build():
     <label class="select"><input type="checkbox" value="{slug}" data-label="{i:02d} {label}"> Shortlist</label></article>'''
     for i,(slug,label,category,head,_,a,b,c) in enumerate(CONCEPTS,1))
     gallery = f'''<body class="gallery"><header class="gallery-bar"><a href="./">{LAB}</a><a href="architecture.html">URL &amp; launch notes</a></header>
-    <main><section class="gallery-heading"><h1>Twenty ways<br>into the lab.</h1><div><p>Homepage proposals for the Programmable Reality Lab. Each uses real project imagery and takes a different route from a possible future to the research behind it.</p><a href="#concepts">Browse concepts</a></div></section>
+    <main><section class="gallery-heading"><h1>Twenty ways<br>into the lab.</h1><div><p>Homepage proposals for the Programmable Reality Lab. Each uses real project imagery and takes a different route from a possible future to the research behind it.</p><a href="review/">Compare the four new homepage studies</a></div></section>
     <section class="review-tools" id="concepts" aria-label="Review tools"><label>Filter <select id="filter"><option>All concepts</option>{"".join(f"<option>{c}</option>" for c in dict.fromkeys(row[2] for row in CONCEPTS))}</select></label>
     <button id="copy" type="button">Copy shortlist</button><span id="selection" role="status">No concepts shortlisted</span></section><div class="entries">{entries}</div></main>
     <footer class="gallery-bar"><span>Design review · Not the official lab website</span><a href="architecture.html">URL &amp; launch notes</a></footer></body>'''
